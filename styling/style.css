@@ -12,6 +12,7 @@ html {
 body {
   height: 100vh;
   width: 100%;
+  color: rgba(255, 255, 255, 0.67)!important;
   background-image: linear-gradient(rgba(0, 0, 0, 0.575)), url(../assets/clouds.webp) !important;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +20,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgba(255, 255, 255, 0.67)!important;
 
 }
 
