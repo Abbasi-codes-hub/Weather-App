@@ -14,58 +14,61 @@
     <link rel="stylesheet" href="/styling/style.css" />
   </head>
   <body>
+    <!-- weather app structure start -->
     <section class="container">
+        <!-- search container -->
       <div class="weather-header">
         <form class="search-cont">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input
-            type="search"
-            name="search"
-            id="search"
+            type="text"
+            name="text"
+            id="text"
             placeholder="search your city..."
+            class="input-search"
           />
         </form>
       </div>
       <div class="weather-body">
         <h1 class="weather-city">lahore</h1>
-        <p class="weather-date-time">hello</p>
+        <p class="weather-date-time">date</p>
         <div class="weather-data">
-            <p class="weather-forecast"></p>
-            <div class="weather-icon"></div>
+            <p class="weather-forecast">cloudy</p>
+            <div class="weather-icon">icon</div>
         </div>
-        <p class="weather-temp">270</p>
+        <p class="weather-temp">270&#176</p>
         <div class="weather-minmax">
-            <p class="weather-min">min 12</p>
-            <p class="weather-max">max 13</p>
+            <p class="weather-min">min 12&#176</p>
+            <p class="weather-max">max 13&#176</p>
         </div>
       </div>
       <section class="weather-details-cont">
         <div class="weather-card">
             <i class="fa-solid fa-droplet"></i>
             <div>
-                <p>feels like</p>
-                <p class="weather-feelslike">15&#176</p>
+                <p class="heading">feels like</p>
+                <p class="weather-feelslike  icon-weather">15&#176</p>
             </div>
         </div>
         <div class="weather-card">
             <i class="fa-solid fa-droplet"></i>
             <div>
-                <p>Humidity</p>
-                <p class="weather-humidity">15&#176</p>
+                <p class="heading">Humidity</p>
+                <p class="weather-humidity  icon-weather">15&#176</p>
             </div>
         </div>
         <div class="weather-card">
-            <i class="fa-solid fa-wind"></i>
+            <i class="fa-solid fa-wind fa-droplet"></i>
             <div>
-                <p>Wind</p>
-                <p class="weather-wind">15&#176</p>
+                <p class="heading">Wind</p>
+                <p class="weather-wind icon-weather">15&#176</p>
             </div>
         </div>
         <div class="weather-card">
-            <i class="fa-solid fa-gauge-high"></i>
+            <i class="fa-solid fa-gauge-high fa-droplet"></i>
             <div>
-                <p>Pressure</p>
-                <p class="weather-pressure">15&#176</p>
+                <p class="heading">Pressure</p>
+                <p class="weather-pressure icon-weather">15&#176</p>
             </div>
         </div>
       </section>
