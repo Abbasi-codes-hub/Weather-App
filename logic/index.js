@@ -17,7 +17,7 @@ const GetCountryName = (code)=> {
 }
 const GetDateTime = (dt) =>{
     const CurrDate = new Date(dt* 1000);
-    console.log(CurrDate);
+    // console.log(CurrDate);
     const options  = {
         weekday: 'long',
         year: 'numeric',
@@ -52,7 +52,7 @@ const GetWeatherData = async () => {
         // console.log(Data)
         const {main ,name , weather , wind , sys, dt } = Data;
         W_City.innerHTML = `${name}, ${GetCountryName(sys.country)}`
-        console.log(Data);
+        // console.log(Data);
         W_Date_Time.innerHTML = GetDateTime(dt) ;
         W_Forecast.innerHTML = `${weather[0].main}`;
         W_Icon.innerHTML =`<img src = "https://openweathermap.org/img/wn/${weather[0].icon}@4x.png" width = "90rem" hight = "80rem" >`
