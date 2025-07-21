@@ -12,14 +12,13 @@ html {
 body {
   height: 100vh;
   width: 100%;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.575)),url("/assets/clouds.webp")!important;
+  background-repeat: no-repeat;
+  background-size:cover;
   /* background-color: rgb(0, 0, 0); */
-  color: rgba(165, 165, 165, 0.877);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.749)),url(/assets/clouds.webp)!important;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 
 }
 
@@ -99,7 +98,7 @@ body {
       .weather-forecast {
         height: 3rem;
         width: 7rem;
-        background-color: rgba(255, 255, 255, 0.889);
+        background-color: rgba(255, 255, 255, 0.497);
         display: flex;
         justify-content: center;
         align-items: center;
