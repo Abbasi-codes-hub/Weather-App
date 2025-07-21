@@ -37,15 +37,20 @@ const GetWeatherData = async () => {
         const Res = await fetch(WeatherUrl);
         const Data = await Res.json();
         // console.log(Data)
-        const {main ,name , Weather , wind , sys, dt } = Data;
+        const {main ,name , weather , wind , sys, dt } = Data;
         W_City.innerHTML = `${name}, ${GetCountryName(sys.country)}`
         console.log(Data);
         W_Date_Time.innerHTML = GetDateTime(dt) ;
-        // W_Forecast.innerTextL = Weather[3];
+        W_Forecast.innerHTML = `${weather[0].main}`;
+        W_Icon.innerHTML =`<img src = "https://openweathermap.org/img/wn/${weather[0].icon}@4x.png" width = "90rem" hight = "80rem" >`
         W_Temp.innerHTML = `${Math.floor(main.temp)}&#176`;
         W_Min.innerHTML = `min ${Math.floor(main.temp)}&#176`;
         W_Max.innerHTML = `max ${Math.floor(main.temp)}&#176`;
-        W_Forecast.textContent = `${Weather.Main}`
+        // W_Forecast.textContent = `${Weather.Main}`;
+        W_FeelLike.innerHTML = `${Math.floor(main.feels_like)}&#176`
+        W_Humidity.innerHTML = `${Math.floor(main.humidity)}&#176`
+        W_Wind.innerHTML = `${Math.floor(wind.deg)}&#176`
+        W_pressure.innerHTML = `${Math.floor(main.pressure)}&#176`
     } catch {
         console.log("error")
     }
