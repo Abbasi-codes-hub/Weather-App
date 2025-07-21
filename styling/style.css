@@ -12,11 +12,12 @@ html {
 body {
   height: 100vh;
   width: 100%;
-  color: rgba(255, 255, 255, 0.67)!important;
-  background-image:linear-gradient(rgba(0, rgba(0, 0, 0, 0.68) 0.511) , black), url(../assets/clouds.webp);
+  color: rgba(220, 220, 220, 0.67)!important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.468));
+  /* background-image:linear-gradient(to right bottom ,rgba(0, rgba(0, 0, 0, 0.68) 0.511) , black), url('../assets/clouds.webp');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   /* background-color: rgb(0, 0, 0); */
   display: flex;
   justify-content: center;
