@@ -17,8 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right bottom ,rgba(0, 0, 0, 0.448)rgb(0, 0, 0))
-  , url(/assets/clouds.webp);
+  background-image:linear-gradient(to right ,rgba(0, 0, 0, 0.749)),url(/assets/clouds.webp)!important;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 
@@ -98,8 +97,8 @@ body {
       gap: 1rem;
 
       .weather-forecast {
-        height: 4rem;
-        width: 8rem;
+        height: 3rem;
+        width: 7rem;
         background-color: rgba(255, 255, 255, 0.889);
         display: flex;
         justify-content: center;
